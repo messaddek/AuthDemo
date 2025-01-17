@@ -4,7 +4,7 @@ using AuthDemo.Models;
 
 namespace AuthDemo.Repositories;
 
-public class InMemoryRepository : IUserRepository
+public class InMemoryUserRepository : IUserRepository
 {
     private readonly ConcurrentDictionary<string, User> _users = new();
 
